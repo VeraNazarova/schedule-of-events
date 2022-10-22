@@ -1,0 +1,326 @@
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+
+    --main-bg-color: #F5FAFE;
+    --white_for_card: #FFFFFF;
+    --accent-bg-color: #0A223D;
+    --main-text-color: #333333;
+    --second-text-color: #ffffff;
+    --accent-color: #EC1F46;
+
+}
+
+* {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 30px;
+    padding: 0;
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.43rem;
+}
+
+em {
+    color: var(--accent-color);
+    font-style: normal;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: solid;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+#scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+header
+{
+  background: url(/src/Church-Russia-winter_1920x1200.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+footer
+{
+  width: 100%;
+  height: 300px;
+  background-color: var(--accent-bg-color);
+  bottom: -300px;
+  position: fixed;
+  z-index: -1;
+}
+
+.content
+{
+    margin-bottom: 50px;
+  background-image: url(../src/belaya-myataya-bumaga-fon-12.jpg);
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-parallax {
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    margin: auto;
+    padding: 0;
+}
+
+section {
+    margin: auto;
+}
+
+.calendar_event {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* стилизация календаря */
+
+.calendar .clndr .clndr-table {
+    background-color: var(--white_for_card);
+}
+
+.calendar .clndr .clndr-controls {
+    min-height: 60px;
+    padding-top: 15px;
+
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    text-transform: capitalize;
+
+    background-color: var(--accent-bg-color);
+
+    border-radius: 6px 6px 0 0;
+}
+
+.calendar .clndr .clndr-table tr {
+    height: 40px;
+}
+
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button,
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+    top: 10px;
+}
+
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+    left: 10px;
+}
+
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+    right: 10px;
+}
+
+ 
+.calendar .clndr .clndr-table tr .day.today {
+   background-color: var(--main-bg-color);
+   border: 1px solid var(--accent-bg-color);
+}
+
+.calendar .clndr .clndr-table .header-days .header-day,
+.calendar .clndr .clndr-table tr .day .day-contents {
+    color: var(--main-text-color);
+}
+
+/* конец стилизации календаря */
+
+.card-month {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.card-month h3 {
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    background-color: var(--accent-bg-color);
+    color: var(--second-text-color);
+
+    border-radius: 6px 6px 0 0;
+}
+
+.scheduled_mouth {
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--white_for_card);
+    flex-grow: 1;
+}
+
+.event_for_scheduled_mouth p {
+    padding-left: 30px;
+    color: var(--main-text-color);
+
+    background-image: url(../src/check.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+} 
+
+.event_for_scheduled_mouth h4 {
+    margin: 5px 0;
+    padding-left: 30px;
+
+    background-image: url(../src/calendar-red.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.event-info {
+    padding-bottom: 50px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+}
+.info {
+    border-radius: 6px;
+
+    color: var(--second-text-color);
+    background-color: var(--accent-bg-color);
+}
+
+.info p {
+    margin-bottom: 15px;
+}
+
+.mini-card {
+    position: relative; 
+    padding: 20px;
+    padding-top: 320px;
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+}
+
+.info h4 {
+    margin-bottom: 15px;
+    font-style: normal;
+    color: var(--second-text-color);
+}
+
+.address,
+.date,
+.venue {
+    padding-left: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.address {
+    background-image: url(../src/map-pin.svg);
+}
+
+.date {
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    padding: 10px;
+
+    color: var(--second-text-color);
+    background-color: var(--accent-color);
+    background-image: url(../src/calendar-red.svg);
+    border-radius: 6px;
+}
+
+.venue {
+    background-image: url(../src/venue.svg);
+}
+
+.left-card {
+    background-image: url(../src/gos_muzey_a_s_pushkina.jpg);
+}
+
+.center-card {
+    background-image: url(../src/Izmailovo_2.jpg);
+}
+
+.rigth-card {
+    background-image: url(../src/dino.jpg);
+}
+
+.statistics h2 {
+    margin-top: 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    list-style-type: none;
+}
+
+li {
+    min-width: 150px;
+    text-align: center;
+
+    border-radius: 6px;
+    background-color: var(--white_for_card);
+}
