@@ -310,6 +310,7 @@ section {
 }
 
 ul {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -318,9 +319,45 @@ ul {
 }
 
 li {
-    min-width: 150px;
+    width: 150px;
+    height: 150px;
+
     text-align: center;
 
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: var(--white_for_card);
+}
+
+li p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.logo-stat {
+    height: 64px;
+    width: 64px;
+
+    margin: auto;
+
+    background-repeat: no-repeat;
+}
+
+#theatre .logo-stat {
+    background-image: url(../src/theater.svg);
+}
+
+#cinema .logo-stat {
+    background-image: url(../src/cinema_icon.svg);
+}
+
+#museum .logo-stat {
+    background-image: url(../src/museum-icon.svg);
+}
+
+#factory .logo-stat {
+    background-image: url(../src/factory-icon.svg);
+}
+
+#different .logo-stat {
+    background-image: url(../src/different-icon.svg);
 }
